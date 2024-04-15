@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ 
+   <h1 class="theme">Calculator</h1> 
+   <div id="calculator">
+    <input id="display" readonly>
+    <!-- <div id="keys">
+            <button class="operator-btn" onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button class="operator-btn" onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button class="operator-btn" onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button class="operator-btn"onclick="appendToDisplay('/')">/</button>
+            <button class="operator-btn"onclick="appendToDisplay('**')">^2</button>
+            <button class="operator-btn"onclick="appendToDisplay('***')">^3</button>
+            <button class="operator-btn"onclick="appendToDisplay('sqrt')">^2</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+            
+            <button class="operator-btn" onclick="clearDisplay()">C</button>
+    </div>
+   </div>
+   <br>
+   <br>
+   <div id="user">
+    <h1 id="myH1">Hello</h1>
+    <label>username</label>
+    <input id="myText"><br><br>
+    <button id="mySubmit">submit</button> -->
+   </div>
+   <br>
+   <br>
+
+   <div id="hidenShow">
+    <!-- <button id="myButton">Hide</button> -->
+    <br>
+   <br>
+    <img id="myImg" src="./car.jpg" width="400px">
+   </div>
+
+   <div class="forms">
+    
+        <label>Enter your age:</label><br><br>
+        <input id="inputMy" type="text"><br><br>
+        <button type="submit" id="submitMy">Submit</button><br><br>
+        <p id="labelMy"></p>
+    
+   </div>
+
+   <div class="inputs">
+
+    <input type="checkbox" id="myCheckBox">
+    <label for="myCheckBox">subscribe</label><br><br>
+
+    <input type="radio" id="visaBtn" name="card">
+    <label for="visaBtn">Visa</label><br>
+    <input type="radio" id="masterCardBtn" name="card">
+    <label for="masterCardBtn">MasterCard</label><br>
+    <input type="radio" id="payPalBtn" name="card">
+    <label for="payPalBtn">PayPal</label><br><br>
+
+    <button type="submit" id="mySubmit">submit</button>
+
+
+    <p id="subResult"></p>
+    <p id="paymentResult"></p>
+
+
+   </div>
+   <form>
+     <h1>Temperature conversion</h1>
+     <input type="number" id="textBox" value="0"><br>
+
+     <input type="radio" id="toFahrenheit" name="unit">
+     <label for="toFahrenheit">Celsius ~ Fahrenheit</label><br>
+
+     <input type="radio" id="toCelsius" name="unit">
+     <label for="toCelsius"> Fahrenheit ~ Celsius </label><br>
+
+     <button id="mbt" type="button" onclick="convert()">Submit</button>
+     <p id="result"></p>
+   </form>
+
+   <div id="containerDice">
+    <h1>Dice Roller</h1>
+    <label># of dice:</label>
+    <input id="diceInput" type="number" value="1" min="1">
+    <button id="diceBtn" onclick="rollDice()">Roll Dice</button>
+    <div id="diceResult"></div>
+    <div id="diceImg"></div>
+   </div>
+
+   <h1 id="myPa3"></h1>
+   
+   <div class="buttonsStart">
+
+     <button class="startButton" onclick="startTimer()">START</button>
+     <button class="startButton" onclick="clearTimer()">CLEAR</button>
+    </div>
+<div id="clock-container">
+  <div id="clock">00:00:00</div>
+</div>
+<div id="stopWatchContainer">
+
+  <h1 id="mH">Stopwatch</h1>
+  <div id="stop-container">
+    <div id="displayS">
+      00:00:00:00
+    </div>
+    <div id="controlls">
+      <button id="startBtn" onclick="start()">Start</button>
+      <button id="stopBtn" onclick="stop()">Stop</button>
+      <button id="resetBtn" onclick="reset()">Reset</button>
+    </div>
+  </div>
+</div>
+
+<h1 id="welcome-msg">WELCOME! </h1>
+<h5 id="my-hfive">Fire together mu</h5>
+<div class="flowers">Rose</div>
+<div class="flowers">Romashka</div>
+<div class="flowers">Hrizantame</div>
+
+<div class="fruitsi">Apple</div>
+<div class="fruitsi">Banana</div>
+<div class="fruitsi">Orange</div>
+<h4>Root Vegatables</h4>
+<ul>
+  <li>Beets</li>
+  <li>Carrots</li>
+  <li>Potatoes</li>
+</ul>
+
+<h4>NON-Root Vegatables</h4>
+<ul>
+  <li>Broccoli</li>
+  <li>Celery</li>
+  <li>Onions</li>
+</ul>
+
+    <script src='./index.js'></script>
+    <!-- <script src='./test.js'></script> -->
+    <script type="module" src="./test.js"></script>
+</body>
+</html>
